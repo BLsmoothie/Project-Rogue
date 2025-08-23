@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4qx8y21aw5kl"]
+
+[ext_resource type="Script" uid="uid://b4wmtkrc4bmyh" path="res://scripts/TemporalAnchor.gd" id="1_6h3vj"]
+
+[node name="TemporalAnchor" type="Area2D"]
+script = ExtResource("1_6h3vj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 1, 1, 1)
