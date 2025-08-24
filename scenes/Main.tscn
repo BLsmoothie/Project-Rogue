@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://b2kh2lx7mbq3j"]
+[gd_scene load_steps=5 format=3 uid="uid://b2kh2lx7mbq3j"]
 
 [ext_resource type="Script" uid="uid://nwopcwhf5yfj" path="res://scripts/Main.gd" id="1_0n3hb"]
 [ext_resource type="PackedScene" uid="uid://ck8j7x3y2v8kf" path="res://scenes/Player.tscn" id="2_8v7jm"]
+[ext_resource type="Script" uid="uid://bwx4gqyyfj787" path="res://scripts/DungeonGenerator.gd" id="3_4h9xk"]
+[ext_resource type="PackedScene" path="res://scenes/UI.tscn" id="4_ui_scene"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_0n3hb")
@@ -10,3 +12,26 @@ script = ExtResource("1_0n3hb")
 position = Vector2(960, 540)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="ReferencePoints" type="Node2D" parent="."]
+
+[node name="Point1" type="Sprite2D" parent="ReferencePoints"]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(800, 400)
+
+[node name="Point2" type="Sprite2D" parent="ReferencePoints"]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(1200, 600)
+
+[node name="Point3" type="Sprite2D" parent="ReferencePoints"]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(600, 700)
+
+[node name="Point4" type="Sprite2D" parent="ReferencePoints"]
+modulate = Color(1, 0, 1, 1)
+position = Vector2(1400, 300)
+
+[node name="DungeonGenerator" type="Node2D" parent="."]
+script = ExtResource("3_4h9xk")
+
+[node name="UI" parent="." instance=ExtResource("4_ui_scene")]

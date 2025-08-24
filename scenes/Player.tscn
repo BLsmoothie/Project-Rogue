@@ -13,3 +13,6 @@ modulate = Color(0, 1, 0, 1)
 [node name="AttackArea" type="Area2D" parent="."]
 
 [node name="AttackShape" type="CollisionShape2D" parent="AttackArea"]
+
+[node name="AttackIndicator" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 0, 0.3)

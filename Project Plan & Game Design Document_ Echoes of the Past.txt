@@ -1,12 +1,13 @@
 Project Plan & Game Design Document: Echoes of the Past
 Project Title: Echoes of the Past Project Lead: [Your Name] Target Platform: PC Genre: Dark Fantasy Roguelite Elevator Pitch: A time-bending roguelite where you are an "echo" of your past self, reliving your memories to correct mistakes and defeat the villain you are destined to become.
 
+PHASE 1
 1. Lore & Narrative
-You are not the hero of this story—not yet. You are an Echo, a fragmented consciousness of a person destined to become a powerful, malevolent force. The mind of your future self has become a prison, a labyrinth of shattered memories and corrupted actions.
+You are not the hero of this storyï¿½not yet. You are an Echo, a fragmented consciousness of a person destined to become a powerful, malevolent force. The mind of your future self has become a prison, a labyrinth of shattered memories and corrupted actions.
 Your mission is to traverse this mental landscape, reliving key moments and correcting the mistakes that led to your downfall. Every level is a twisted memory, a past event where a crucial moral choice was made. The enemies are manifestations of your guilt, regrets, and the sinister forces that influenced you.
-Your ultimate goal is to reach your future self—the villain you are destined to become—and defeat them in a final confrontation to erase that timeline and create a new, hopeful one.
+Your ultimate goal is to reach your future selfï¿½the villain you are destined to becomeï¿½and defeat them in a final confrontation to erase that timeline and create a new, hopeful one.
 2. Core Gameplay Mechanics
-Death & Echoes: When you die, your current run ends, but you leave behind a Temporal Anchor—a new kind of Echo. This anchor is not just power; it is a memory fragment of a past mistake.
+Death & Echoes: When you die, your current run ends, but you leave behind a Temporal Anchorï¿½a new kind of Echo. This anchor is not just power; it is a memory fragment of a past mistake.
 The Temporal Anchor System: Upon finding and "purifying" this anchor in a subsequent run, you gain the power and knowledge from your previous attempt. The longer the previous run lasted, the more significant the "memory fragment" and the more powerful the boon it grants you. This encourages deep runs, as the power you gain is directly tied to the effort you put in.
 The Ascendancy & Alternate Timelines Loop: After your first victory, the game introduces a new layer of complexity and replayability:
 Ascension Levels: Each time you defeat your future villain self, you unlock a new Ascendancy level. This makes enemies stronger, adds new attack patterns to bosses, and introduces more complex challenges. The goal is to see how high you can ascend.
@@ -47,3 +48,37 @@ Does a Temporal Anchor with the correct timer value spawn when you die?
 Does collecting the Temporal Anchor work as intended?
 Is the enemy AI working correctly?
 
+Phase 2, Sprint 1: Visuals & Level Design
+Objective: Transform the basic prototype from colored squares into a visually distinct, atmospheric level that fits the lore of "The Sunken Garden of Youth."
+
+Key Tasks:
+
+Art Style Test: Before generating a full suite of assets, use your AI tools to create a small number of test assets to ensure the style works.
+
+Your Prompt: Use a detailed prompt that captures the essence of a "decaying, overgrown garden" with "sickly green" and "mournful" tones.
+
+Assets to Generate:
+
+One floor tile (e.g., mossy cobblestones).
+
+One wall tile (e.g., overgrown, cracked stone).
+
+A player character placeholder (perhaps a shadowy figure with a single, glowing eye).
+
+A placeholder for the Hollowed Remnant enemy.
+
+Create a Tile Set: Once you are happy with the art style, use a consistent prompt to generate a full tile set. This will be the foundation for your level.
+
+Required Tiles: Floor tiles (corners, edges, inner), wall tiles, water/swamp tiles, and small decorative elements like corrupted plants or glowing fungi.
+
+Tip: Your AI tool's ability to maintain a consistent style is key here. Save your successful prompts and use them as a base for all future generations.
+
+Modify the Level Generator: The current level generator uses simple squares. Now, you will update your code to use the new tile set to build more complex and visually appealing rooms and corridors.
+
+Objective: The generator should now be able to randomly place the different tile types from your set to create more varied and interesting layouts that reflect the "Sunken Garden" theme.
+
+Implement the First Enemy: Use the placeholder art you generated to create the "Hollowed Remnant" enemy.
+
+Behavior: The AI should have a simple patrol or slow-chase behavior. The key here is to tie the visual to the function. Their mournful appearance should match their slow, deliberate movement.
+
+This sprint will be a major leap forward, turning your working prototype into the first true glimpse of your game's final look and feel.

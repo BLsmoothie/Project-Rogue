@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8iax4y506w7v"]
+
+[ext_resource type="Script" path="res://scripts/Enemy.gd" id="1_8k2lm"]
+
+[node name="Enemy" type="CharacterBody2D"]
+script = ExtResource("1_8k2lm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 0, 0, 1)
+
+[node name="DetectionArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+offset_bottom = -32.0
+max_value = 3.0
+value = 3.0
+show_percentage = false
